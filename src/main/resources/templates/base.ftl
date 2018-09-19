@@ -41,32 +41,6 @@
 
         <div class="content-wrapper">
             <!-- Header Top -->
-            <div class="header-top visible-md visible-lg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4">
-                            <ul class="social-icon">
-                                <li><a href="" class="fa fa-facebook" aria-hidden="true"> </a></li>
-                                <li><a href="" class="fa fa-twitter" aria-hidden="true"> </a></li>
-                                <li><a href="" class="fa fa-pinterest-p" aria-hidden="true"> </a></li>
-                                <li><a href="" class="fa fa-google-plus" aria-hidden="true"> </a></li>
-                                <li><a href="" class="fa fa-linkedin" aria-hidden="true"> </a></li>
-
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-12 col-md-8">
-                            <ul class="top-contact pull-right">
-                                <li class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i> +42-123-4567</li>
-                                <li class="email"><i class="fa fa-envelope" aria-hidden="true"></i>
-                                    contact@domain.com
-                                </li>
-                                <li class="get-a-quote"><a href="#" title="">Get a Quote</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- .navbar-top -->
             <nav class="navbar m-menu navbar-default">
                 <div class="container">
@@ -79,24 +53,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="/img/logo.png" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="/img/logop2.jpg" alt=""></a>
                     </div>
 
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="#navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right main-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li class="dropdown dropdown-toggle"><a href="#" data-toggle="dropdown">Dropdown <span><i class="fa fa-angle-down"></i></span></a>
+                            <li class="active"><a href="/">Inicio</a></li>
+                            <li><a href="about.html">Sobre Nosotros</a></li>
+                            <li><a href="about.html">Encuesta</a></li>
+                            <li class="dropdown dropdown-toggle"><a href="#" data-toggle="dropdown">Resultados <span><i class="fa fa-angle-down"></i></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Awesome Features</a></li>
-                                    <li><a href="#">Clean Interface</a></li>
-                                    <li><a href="#">Available Possibilities</a></li>
-                                    <li><a href="#">Responsive Design</a></li>
-                                    <li><a href="#">Pixel Perfect Graphics</a></li>
+                                    <li><a href="#">Ver lista de datos</a></li>
+                                    <li><a href="#">Detalles</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -122,29 +92,30 @@
                         <img src="/img/hero-slide-1.jpg" alt="Hero Slide">
 
                         <div class="carousel-caption">
-                            <h1>Strategic Management</h1>
+                            <h1>Realizar encuesta</h1>
 
-                            <p>Efficiently develop parallel e-markets through impactful outsourcing.<br>Conveniently drive prospective functionalities before.</p>
+                            <p>Realiza encuestas a la poblacion de la zona<br>Guardando los datos necesarios y la localizacion!</p>
+                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
                         </div>
                     </div>
                     <div class="item">
                         <img src="/img/hero-slide-2.jpg" alt="...">
 
                         <div class="carousel-caption">
-                            <h1>Market Analyst</h1>
+                            <h1>Mostrar datos</h1>
 
-                            <p>Synergistically enhance low-risk high-yield testing procedures<br>with clicks-and-mortar architectures.
-                            </p>
+                            <p>Aqui puedes ver todos los datos tomados hasta el momento<br>Brinda la opcion de poder editar y eliminar datos!</p>
+                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
                         </div>
                     </div>
                     <div class="item">
                         <img src="/img/hero-slide-3.jpg" alt="...">
 
                         <div class="carousel-caption">
-                            <h1>Customer Care</h1>
+                            <h1>Detalles</h1>
 
-                            <p>Monotonectally envisioneer 24/7 bandwidth with reliable imperatives. <br>Continually unleash unique
-                                niches after go forward.</p>
+                            <p>Aqui podras ver cuanta informacion hay reunida hasta<br>el momento, de que zona hay mas gente, total de<br> encuestas, etc.</p>
+                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
                         </div>
                     </div>
                 </div>
@@ -160,85 +131,6 @@
                 </a>
             </div>
             <!-- #my-carousel-->
-
-
-
-            <section class="section-content-left-icon">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="left-icon-wraper">
-                                <div class="icon">
-                                    <i class="flaticon-tags"></i>
-                                </div>
-
-                                <div class="content">
-                                    <h2>SEO Experts</h2>
-                                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="left-icon-wraper">
-                                <div class="icon"><i class="flaticon-ranking"></i></div>
-
-                                <div class="content">
-                                    <h2>Great Rankings</h2>
-                                    <p>Distinctively cultivate granular action items with standards compliant metrics. Holisticly promote empowered.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="left-icon-wraper">
-                                <div class="icon"><i class="flaticon-monitoring"></i></div>
-
-                                <div class="content">
-                                    <h2>Brand Visibility</h2>
-                                    <p>Assertively facilitate go forward web services whereas intuitive e-markets. Completely parallel task world.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="left-icon-wraper">
-                                <div class="icon"><i class="flaticon-blogging"></i></div>
-
-                                <div class="content">
-                                    <h2>Content Marketing</h2>
-                                    <p>Efficiently monetize technically sound e-markets rather than interoperable e-services.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="left-icon-wraper">
-                                <div class="icon"><i class="flaticon-social-media"></i></div>
-
-                                <div class="content">
-                                    <h2>Social Media</h2>
-                                    <p>Collaboratively seize best-of-breed manufactured products for inexpensive initiatives. Dynamically repurpose.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="left-icon-wraper">
-                                <div class="icon"><i class="flaticon-viral-marketing"></i></div>
-
-                                <div class="content">
-                                    <h2>Digital Marketing</h2>
-                                    <p>Enthusiastically promote standards compliant relationships vis-a-vis backend resources.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- .container -->
-            </section>
             <!-- /.services-left-icon -->
 
             <section class="featured-box">
@@ -263,193 +155,17 @@
             </section>
             <!-- /.featured-box -->
 
-            <section class="testimonial">
-                <div class="container">
-                    <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#testimonialSlider" data-slide-to="0" class="active"></li>
-                            <li data-target="#testimonialSlider" data-slide-to="1"></li>
-                            <li data-target="#testimonialSlider" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <blockquote>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel lacus
-                                        pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec diam elit
-                                        consequat eget augue vitae aliquet sollicitudin.
-                                    </p>
-
-                                    <ul class="user-details">
-                                        <li class="avatar"><img src="/img/img-testimonial-1.jpg" class="img-responsive" alt=""/></li>
-                                        <li class="name">Justus Kühn</li>
-                                        <li class="company">uiCookies</li>
-                                    </ul>
-
-                                </blockquote>
-                            </div>
-                            <div class="item">
-                                <blockquote>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel lacus
-                                        pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec diam elit
-                                        consequat eget augue vitae aliquet sollicitudin.
-                                    </p>
-                                    <ul class="user-details">
-                                        <li class="avatar"><img src="/img/img-testimonial-2.jpg" class="img-responsive" alt=""/></li>
-                                        <li class="name">Lennox Arnold</li>
-                                        <li class="company">uiCookies</li>
-                                    </ul>
-
-                                </blockquote>
-                            </div>
-                            <div class="item">
-                                <blockquote>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel lacus
-                                        pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec diam elit
-                                        consequat eget augue vitae aliquet sollicitudin.
-                                    </p>
-                                    <ul class="user-details">
-                                        <li class="avatar"><img src="/img/img-testimonial-3.jpg" class="img-responsive" alt=""/></li>
-                                        <li class="name">Paulina Berger</li>
-                                        <li class="company">uiCookies</li>
-                                    </ul>
-
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- #testimonialSlider -->
-                </div>
-            </section>
-            <!-- /.testimonial -->
-
-            <section class="client-logo ptb-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                            <a href="#"><img src="/img/logo-client-1.jpg" alt="Image"></a>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                            <a href="#"><img src="/img/logo-client-2.jpg" alt="Image"></a>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                            <a href="#"><img src="/img/logo-client-3.jpg" alt="Image"></a>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                            <a href="#"><img src="/img/logo-client-4.jpg" alt="Image"></a>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                            <a href="#"><img src="/img/logo-client-5.jpg" alt="Image"></a>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                            <a href="#"><img src="/img/logo-client-6.jpg" alt="Image"></a>
-                        </div>
-                    </div>
-                </div>
-                <!--end of .container -->
-            </section>
-            <!-- /.client-logo -->
-
-            <section class="case-studies">
-                <div class="container">
-                    <div class="section-title text-center">
-                        <h1>Our case Studies</h1>
-                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy<br>with my whole heart. I am alone, and feel the charm of existence in this spot.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="case-studies-content">
-                                <img class="img-responsive" src="/img/img-case-sudies-1.png" alt="case sudies.png">
-                                <h2>Solving the problem</h2>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="case-studies-content">
-                                <img class="img-responsive" src="/img/img-case-sudies-2.png" alt="case sudies.png">
-                                <h2>Analysis of the enterprise's activity</h2>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="case-studies-content">
-                                <img class="img-responsive" src="/img/img-case-sudies-3.png" alt="case sudies.png">
-                                <h2>Methods of the recruitment</h2>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="case-studies-content">
-                                <img class="img-responsive" src="/img/img-case-sudies-4.png" alt="case sudies.png">
-                                <h2>SEO and Web development</h2>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="case-studies-content">
-                                <img class="img-responsive" src="/img/img-case-sudies-5.png" alt="case sudies.png">
-                                <h2>Thinking only of profits</h2>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="case-studies-content">
-                                <img class="img-responsive" src="/img/img-case-sudies-6.png" alt="case sudies.png">
-                                <h2>The main objectives of the marketer</h2>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </section>
-            <!-- /.client-logo -->
-
 
             <footer class="footer">
 
-                <!-- Footer Widget Section -->
-                <div class="footer-widget-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="footer-logo">
-                                    <a href="#"><img class="img-responsive" src="/img/logo-footer.png" alt=""></a>
-                                </div>
-                            </div><!-- /.col-sm-4 -->
-
-                            <div class="col-md-8">
-                                <div class="footer-text">
-                                    <p>Assertively architect synergistic platforms vis-a-vis premium results. Synergistically facilitate high-payoff e-services rather than top-line sources. Collaboratively drive market positioning infomediaries without real-time e-commerce.</p>
-
-                                    <ul>
-                                        <li class="phone"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 1-677-124-44227
-                                            <small><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Sat 8.00 - 18.00h</small></li>
-                                        <li class="address">
-                                            <address>
-                                                <i class="fa fa-map-pin" aria-hidden="true"></i>
-                                                437 S Olive St, Los Angeles
-                                            </address>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div><!-- /.col-sm-4 -->
-                        </div>
-                    </div>
-                </div><!-- /.Footer Widget Section -->
-
                 <div class="copyright-section">
                     <div class="container clearfix">
-                        <span class="copytext">Copyright &copy; 2016 | <a href="https://uicookies.com/downloads/marketer-bootstrap-html5-advertising-agency-website-template/">Marketer</a> Designed And Developed By: <strong style="color:#4d6de3">uiCookies.com</strong></span>
+                        <span class="copytext">Copyright &copy; 2018 | <a href="https://uicookies.com/downloads/marketer-bootstrap-html5-advertising-agency-website-template/">Marketer</a> Designed And Developed By: <strong style="color:#4d6de3">uiCookies.com</strong></span>
 
                         <ul class="list-inline pull-right">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li class="active"><a href="/">Inicio</a></li>
+                            <li><a href="about.html">Sobre Nosotros</a></li>
+                            <li><a href="about.html">Encuesta</a></li>
                         </ul>
                     </div><!-- .container -->
 
