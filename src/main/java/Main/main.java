@@ -60,6 +60,12 @@ public class main {
             return new ModelAndView(mapa, "prueba.ftl");
         }, motor);
 
+        get("/prueba2", (request, response) -> {
+
+            Map<String, Object> mapa = new HashMap<>();
+            return new ModelAndView(mapa, "prueba2.ftl");
+        }, motor);
+
     }
 
 
