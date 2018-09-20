@@ -2,6 +2,8 @@ plugins {
     id 'java'
 }
 
+apply plugin: 'application'
+
 group 'Web Avanzada'
 version '1.0-SNAPSHOT'
 
