@@ -28,6 +28,8 @@ import static spark.Spark.*;
 public class main {
     public static void main(String[] args) throws SQLException {
 
+        port(getPuertoHeroku());
+
         //Iniciando el servicio
         BootStrapService.getInstancia().init();
 
@@ -212,6 +214,15 @@ public class main {
         }, motor);
 
     }
+
+    static int getPuertoHeroku() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //En caso de no pasar la información, toma el puerto 4567
+    }
+
 
 
 }
