@@ -210,4 +210,7 @@
 <a style="font-size:0; height:0; width:0; opacity:0; position:absolute" target="_blank" href="http://www.uicookies.com">Bootstrap Templates by uiCookies</a>
 </div>
 </body>
+<script src="/js/offline-js.js"></script>
+<link rel="stylesheet" href="/css/offline-theme-default.css">
+<link rel="stylesheet" href="/css/offline-language-spanish.css">
 </html>
