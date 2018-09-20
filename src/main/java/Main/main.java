@@ -148,6 +148,52 @@ public class main {
             return "";
         });
 
+        get("/lista/edit/:id", (request, response) -> {
+
+            long id = Long.parseLong(request.params("id"));
+
+            formulario cc= FormServices.getInstancia().find(id);
+
+            Map<String, Object> mapa = new HashMap<>();
+            mapa.put("f", cc);
+            return new ModelAndView(mapa, "editar.ftl");
+        }, motor);
+
+        post("/lista/edit/:id", (request, response) -> {
+
+            long id = Long.parseLong(request.params("id"));
+
+            formulario insertar= FormServices.getInstancia().find(id);
+
+            String name =request.queryParams("nombre") != null ? request.queryParams("nombre") : "unknown";
+            String sector =request.queryParams("sector") != null ? request.queryParams("sector") : "unknown";
+            String nivel =request.queryParams("nivel");
+            String calle =request.queryParams("calle");
+            String ciudad =request.queryParams("ciudad");
+            String pais =request.queryParams("pais");
+
+
+            insertar.setNombre(name);
+            insertar.setSector(sector);
+            insertar.setNivel_escolar(nivel);
+            if(calle != null && !calle.isEmpty()) {
+                insertar.setExtra(calle);
+            }else {insertar.setExtra(null);}
+
+            if(ciudad != null && !ciudad.isEmpty()) {
+                insertar.setCiudad(ciudad);
+            }else {insertar.setCiudad(null);}
+
+            if(pais != null && !pais.isEmpty()) {
+                insertar.setPais(pais);
+            }else {insertar.setPais(null);}
+
+            FormServices.getInstancia().editar(insertar);
+
+            response.redirect("/lista");
+            return "";
+        });
+
         get("/prueba2", (request, response) -> {
 
             Map<String, Object> mapa = new HashMap<>();
