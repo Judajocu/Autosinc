@@ -127,6 +127,27 @@ public class main {
             return "";
         });
 
+        get("/lista", (request, response) -> {
+
+            List<formulario> lista= FormServices.getInstancia().findAll();
+
+            Map<String, Object> mapa = new HashMap<>();
+            mapa.put("lista", lista);
+            return new ModelAndView(mapa, "lista.ftl");
+        }, motor);
+
+        get("/lista/delete/:id", (request, response) -> {
+
+            long id = Long.parseLong(request.params("id"));
+
+            formulario cc= FormServices.getInstancia().find(id);
+            FormServices.getInstancia().eliminar(cc.getId());
+
+            //response.redirect("/inicio/post/"+cc.getPost().getId());
+            response.redirect("/lista");
+            return "";
+        });
+
         get("/prueba2", (request, response) -> {
 
             Map<String, Object> mapa = new HashMap<>();

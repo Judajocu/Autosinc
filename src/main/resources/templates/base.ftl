@@ -65,7 +65,7 @@
                             <li><a href="/poll">Encuesta</a></li>
                             <li class="dropdown dropdown-toggle"><a href="#" data-toggle="dropdown">Resultados <span><i class="fa fa-angle-down"></i></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Ver lista de datos</a></li>
+                                    <li><a href="/lista">Ver lista de datos</a></li>
                                     <li><a href="#">Detalles</a></li>
                                 </ul>
                             </li>
@@ -105,7 +105,7 @@
                             <h1>Mostrar datos</h1>
 
                             <p>Aqui puedes ver todos los datos tomados hasta el momento<br>Brinda la opcion de poder editar y eliminar datos!</p>
-                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
+                            <a href="/lista" class="btn btn-primary btn-lg">Entra Aqui</a>
                         </div>
                     </div>
                     <div class="item">

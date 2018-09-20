@@ -21,6 +21,8 @@
     <!-- Style CSS -->
     <link href="/css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/css/detalles.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,7 +67,7 @@
                             <li><a href="/poll">Encuesta</a></li>
                             <li class="dropdown dropdown-toggle"><a href="#" data-toggle="dropdown">Resultados <span><i class="fa fa-angle-down"></i></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Ver lista de datos</a></li>
+                                    <li><a href="/lista">Ver lista de datos</a></li>
                                     <li><a href="#">Detalles</a></li>
                                 </ul>
                             </li>
