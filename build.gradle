@@ -8,7 +8,13 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-mainClassName = "main.main"
+mainClassName = "Main.main"
+
+defaultTasks = ['stage']
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.8'
+}
 
 repositories {
     mavenCentral()

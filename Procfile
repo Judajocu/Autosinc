@@ -1,2 +1,2 @@
 
-web: build/install/Autosinc/bin/Autosinc
+web: build/install/HTML5/bin/Autosinc
