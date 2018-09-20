@@ -1,90 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Prueba localizacion</title>
-</head>
-<body>
-prueba inicial de corrida
-<h1>esto</h1>
+<#include "blank.ftl">
 
-<textarea id="geolocalizacion" class="input100" name="geolocalizacion" readonly="readonly">No se pudo obtener su localización...</textarea>
+<#macro page_head>
+<title>Encuesta- Ingreso</title>
+</#macro>
 
-<a href="#" id="get_loc">Conseguir localizacion</a>
-<div id="mapa">
-    <iframe id="google_map"
-            width="425" height="350" frameborder="0" scrolling="no"
-            marginheight="0" marginwidth="0"
-            src="https://www.google.com/maps/embed?">
-    </iframe>
+<#macro titulo>
+<h2>Encuesta - Ingresar entrada</h2>
+</#macro>
 
-    <iframe id="google_map"
-            width="425" height="350" frameborder="0" scrolling="no"
-            marginheight="0" marginwidth="0"
-            src="https://maps.google.com/?q=19.437158399999998, -70.6748416&z=15&output=embed">
-    </iframe>
-</div>
+<#macro page_body>
+<section class="about-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>We help you to get appear on first page of serach engines</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Appropriately benchmark bricks-and-clicks e-business before parallel communities. Completely
+                    synergize exceptional outsourcing with principle-centered platforms. Credibly unleash synergistic
+                    internal or "organic" sources without functionalized technology. Objectively brand granular human
+                    capital without goal-oriented e-business. Competently predominate multifunctional web-readiness via
+                    state of the art strategic theme areas.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Completely pontificate timely metrics rather than accurate growth strategies. Seamlessly impact
+                    premium communities whereas real-time networks. Professionally transform high-payoff collaboration
+                    and idea-sharing before resource maximizing supply chains. Energistically evisculate timely
+                    manufactured products for resource-leveling ROI. Assertively create client-focused vortals whereas
+                    functional potentialities.</p>
+            </div>
+        </div>
+    </div>
 
-<button onclick="getlocation()"> conseguir l</button>
-<div id="output">
-    algo
-</div>
-
-<script>
-    var c=function (pos) {
-        var lat=pos.coords.latitude,
-            long= pos.coords.longitude,
-            coords= lat+', '+long;
-
-        document.getElementById('google_map').setAttribute('src','https://maps.google.com/?q=' +coords + '&z=60&output=embed')
-    }
-
-    var e=function(error){
-        if(error.code===1){
-            alert('Sin permisos para obtener localizacion')
-        }
-    }
-
-    document.getElementById('get_loc').onclick=function () {
-        navigator.geolocation.getCurrentPosition(c,e);
-        return false;
-    }
-</script>
-
-
-<script src="http://code.jquery.com/jquery-2.2.4.min.js">
-</script>
-<script>
-    var x = document.getElementById('output');
-
-    function getlocation(){
-        if(navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(gotPoss);
-        }else{
-            x.innerHTML="error con el navegador";
-        }
-    }
-
-    function gotPoss(position){
-        var y= "AIzaSyAnpyy2mU1VR_zWhF58YOwxW0CvGidn2fI"
-        //geolocalizacion.textContent = "(" + position.coords.latitude + ", "  + position.coords.longitude + ")";
-        var locAPI="http://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&?key="+y;
-
-        $.get({
-            url: locAPI,
-            success: function(data){
-                console.log(data);
-                x.innerHTML = data.results[0].address_components[0].long_name+", ";
-                x.innerHTML += data.results[0].address_components[1].long_name+", ";
-                x.innerHTML += data.results[0].address_components[2].long_name;
-
-            }
-        })
-
-    }
-
-</script>
-
-<script src="/js/geolocation.js"></script>
-</body>
-</html>
+</section>
+            <!-- .about-text-->
+</#macro>

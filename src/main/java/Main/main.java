@@ -20,6 +20,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import Clases.*;
+import Database.*;
+
 import static spark.Spark.*;
 
 public class main {
@@ -28,6 +31,24 @@ public class main {
         //Iniciando el servicio
         BootStrapService.getInstancia().init();
 
+        //prueba de datos
+        /*formulario insertar = new formulario();
+        insertar.setNombre("Graciela");
+        insertar.setSector("Residencial Imperial");
+        insertar.setNivel_escolar("universitario");
+        insertar.setCiudad("Santiago");
+        insertar.setPais("RD");
+        insertar.setLatitud("19.437158399999998");
+        insertar.setLongitud("-70.6748416");
+        FormServices.getInstancia().crear(insertar);
+        */
+
+        //prueba encuestas
+        List<formulario> pu=FormServices.getInstancia().findAll();
+        for (formulario u: pu){
+            System.out.println(" name:"+u.getNombre()+" ID:" +u.getId()+" Sector:"+u.getSector()+" Nivel_E:"+u.getNivel_escolar()+" ciudad:"+u.getCiudad()+" pais:"+u.getPais()+" latitud:"+u.getLatitud()+" longitud:"+u.getLongitud());
+
+        }
 
 
         manejadorFremarker();
@@ -54,10 +75,10 @@ public class main {
             return new ModelAndView(mapa, "base.ftl");
         }, motor);
 
-        get("/prueba", (request, response) -> {
+        get("/poll", (request, response) -> {
 
             Map<String, Object> mapa = new HashMap<>();
-            return new ModelAndView(mapa, "prueba.ftl");
+            return new ModelAndView(mapa, "encuesta.ftl");
         }, motor);
 
         get("/prueba2", (request, response) -> {

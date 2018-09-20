@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Practica 9 - Encuesta</title>
+    <@page_head/>
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -30,6 +30,7 @@
 </head>
 <body>
 <div id="main-wrapper">
+
     <!-- Page Preloader -->
     <div id="preloader">
         <div id="status">
@@ -40,7 +41,6 @@
     <div class="uc-mobile-menu-pusher">
 
         <div class="content-wrapper">
-            <!-- Header Top -->
             <!-- .navbar-top -->
             <nav class="navbar m-menu navbar-default">
                 <div class="container">
@@ -78,82 +78,21 @@
             </nav>
             <!-- .nav -->
 
-            <div id="my-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#my-carousel" data-slide-to="1"></li>
-                    <li data-target="#my-carousel" data-slide-to="2"></li>
-                </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="/img/hero-slide-1.jpg" alt="Hero Slide">
-
-                        <div class="carousel-caption">
-                            <h1>Realizar encuesta</h1>
-
-                            <p>Realiza encuestas a la poblacion de la zona<br>Guardando los datos necesarios y la localizacion!</p>
-                            <a href="/poll" class="btn btn-primary btn-lg">Entra Aqui</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="/img/hero-slide-2.jpg" alt="...">
-
-                        <div class="carousel-caption">
-                            <h1>Mostrar datos</h1>
-
-                            <p>Aqui puedes ver todos los datos tomados hasta el momento<br>Brinda la opcion de poder editar y eliminar datos!</p>
-                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="/img/hero-slide-3.jpg" alt="...">
-
-                        <div class="carousel-caption">
-                            <h1>Detalles</h1>
-
-                            <p>Aqui podras ver cuanta informacion hay reunida hasta<br>el momento, de que zona hay mas gente, total de<br> encuestas, etc.</p>
-                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!-- #my-carousel-->
-            <!-- /.services-left-icon -->
-
-            <section class="featured-box">
+            <section class="single-page-title single-page-title-about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="featured-content-wrapper">
-                                <div class="featured-img">
-                                    <img class="img-responsive" src="/img/img-featured-1.png" alt="">
-                                </div>
-                                <div class="featured-content">
-                                    <h1>Mejoramos tu rendimiento en la net</h1>
-                                    <p>
-                                        Mejoras dinámicas de los métodos precisos de empoderamiento sin aplicaciones interdependientes. Apropiadamente habilitar plataformas sinérgicas para productos manufacturados visionarios. Desarrolle dramáticamente las más modernas relaciones sin metodologías para toda la empresa.
-                                    </p>
-                                    <a href="" class="btn btn-default btn-lg">Descubre más sobre nosotros</a>
-                                </div>
-                            </div>
+                            <@titulo/>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- /.featured-box -->
+            <!-- .page-title -->
+
+            <@page_body/>
+
+
 
 
             <footer class="footer">
@@ -176,7 +115,7 @@
         </div>
         <!-- .content-wrapper -->
     </div>
-    <!-- .uc-mobile-menu-pusher -->
+    <!-- .offcanvas-pusher -->
 
     <div class="uc-mobile-menu uc-mobile-menu-effect">
         <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
@@ -193,7 +132,6 @@
         </div>
     </div>
     <!-- .uc-mobile-menu -->
-
 </div>
 <!-- #main-wrapper -->
 
@@ -206,11 +144,5 @@
 <script src="/js/smoothscroll.js"></script>
 <script src="/js/mobile-menu.js"></script>
 <script src="/js/scripts.js"></script>
-<div/>
-<a style="font-size:0; height:0; width:0; opacity:0; position:absolute" target="_blank" href="http://www.uicookies.com">Bootstrap Templates by uiCookies</a>
-</div>
 </body>
-<script src="/js/offline-js.js"></script>
-<link rel="stylesheet" href="/css/offline-theme-default.css">
-<link rel="stylesheet" href="/css/offline-language-spanish.css">
 </html>
