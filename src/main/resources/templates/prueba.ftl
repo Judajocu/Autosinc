@@ -50,13 +50,39 @@ prueba inicial de corrida
         return false;
     }
 </script>
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script>
-    var x=document.getElementById('output');
 
-    x.innerHTML="aqui esta";
+
+<script src="http://code.jquery.com/jquery-2.2.4.min.js">
+</script>
+<script>
+    var x = document.getElementById('output');
+
+    function getlocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(gotPoss);
+        }else{
+            x.innerHTML="error con el navegador";
+        }
+    }
+
+    function gotPoss(position){
+        var y= "AIzaSyAnpyy2mU1VR_zWhF58YOwxW0CvGidn2fI"
+        //geolocalizacion.textContent = "(" + position.coords.latitude + ", "  + position.coords.longitude + ")";
+        var locAPI="http://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&?key="+y;
+
+        $.get({
+            url: locAPI,
+            success: function(data){
+                console.log(data);
+                x.innerHTML = data.results[0].address_components[0].long_name+", ";
+                x.innerHTML += data.results[0].address_components[1].long_name+", ";
+                x.innerHTML += data.results[0].address_components[2].long_name;
+
+            }
+        })
 
     }
+
 </script>
 
 <script src="/js/geolocation.js"></script>
