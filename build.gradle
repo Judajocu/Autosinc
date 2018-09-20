@@ -34,3 +34,7 @@ dependencies {
     compile 'org.hibernate:hibernate-entitymanager:5.1.0.Final'
     compile group: 'org.eclipse.jetty', name: 'jetty-http-spi', version: '9.4.4.v20170414'
 }
+
+task stage {
+    dependsOn installDist
+}
