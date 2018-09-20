@@ -142,7 +142,7 @@
                                     <img class="img-responsive" src="/img/img-featured-1.png" alt="">
                                 </div>
                                 <div class="featured-content">
-                                    <h1>We Improve Your Online Performance</h1>
+                                    <h1>Mejoramos tu rendimiento en la net</h1>
                                     <p>
                                         Dynamically enhance accurate methods of empowerment without interdependent applications. Appropriately e-enable synergistic platforms for visionary manufactured products. Dramatically develop state of the art relationships without enterprise-wide methodologies.
                                     </p>
