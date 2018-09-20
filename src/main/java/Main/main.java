@@ -194,6 +194,17 @@ public class main {
             return "";
         });
 
+        get("/lista/ver/:id", (request, response) -> {
+
+            long id = Long.parseLong(request.params("id"));
+
+            formulario cc= FormServices.getInstancia().find(id);
+
+            Map<String, Object> mapa = new HashMap<>();
+            mapa.put("f", cc);
+            return new ModelAndView(mapa, "vista.ftl");
+        }, motor);
+
         get("/prueba2", (request, response) -> {
 
             Map<String, Object> mapa = new HashMap<>();
