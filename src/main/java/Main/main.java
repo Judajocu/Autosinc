@@ -207,6 +207,48 @@ public class main {
             return new ModelAndView(mapa, "vista.ftl");
         }, motor);
 
+        get("/about", (request, response) -> {
+
+            Map<String, Object> mapa = new HashMap<>();
+            return new ModelAndView(mapa, "about.ftl");
+        }, motor);
+
+        get("/detail", (request, response) -> {
+
+            List<formulario> lista= FormServices.getInstancia().findAll();
+
+            List<String> lugares=new ArrayList<>();
+            for(formulario f:lista){
+                lugares.add(f.getPais());
+            }
+            Set<String> pais=new HashSet<>();
+            for(String f:lugares){
+                pais.add(f);
+            }
+
+            List<String> lugares2=new ArrayList<>();
+            for(formulario f:lista){
+                lugares2.add(f.getCiudad());
+            }
+            Set<String> ciudad=new HashSet<>();
+            for(String f:lugares2){
+                ciudad.add(f);
+            }
+
+            for(String f:pais){
+                System.out.println(f);
+            }
+            for(String f:ciudad){
+                System.out.println(f);
+            }
+
+            Map<String, Object> mapa = new HashMap<>();
+            mapa.put("lista", lista);
+            mapa.put("listap", pais);
+            mapa.put("listac", ciudad);
+            return new ModelAndView(mapa, "detail.ftl");
+        }, motor);
+
         get("/prueba2", (request, response) -> {
 
             Map<String, Object> mapa = new HashMap<>();

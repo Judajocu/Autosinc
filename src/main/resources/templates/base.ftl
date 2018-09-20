@@ -61,12 +61,12 @@
                     <div class="collapse navbar-collapse" id="#navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right main-nav">
                             <li class="active"><a href="/">Inicio</a></li>
-                            <li><a href="about.html">Sobre Nosotros</a></li>
+                            <li><a href="/about">Sobre Nosotros</a></li>
                             <li><a href="/poll">Encuesta</a></li>
                             <li class="dropdown dropdown-toggle"><a href="#" data-toggle="dropdown">Resultados <span><i class="fa fa-angle-down"></i></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/lista">Ver lista de datos</a></li>
-                                    <li><a href="#">Detalles</a></li>
+                                    <li><a href="/detail">Detalles</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -115,7 +115,7 @@
                             <h1>Detalles</h1>
 
                             <p>Aqui podras ver cuanta informacion hay reunida hasta<br>el momento, de que zona hay mas gente, total de<br> encuestas, etc.</p>
-                            <a href="/" class="btn btn-primary btn-lg">Entra Aqui</a>
+                            <a href="/detail" class="btn btn-primary btn-lg">Entra Aqui</a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                                     <p>
                                         Mejoras dinámicas de los métodos precisos de empoderamiento sin aplicaciones interdependientes. Apropiadamente habilitar plataformas sinérgicas para productos manufacturados visionarios. Desarrolle dramáticamente las más modernas relaciones sin metodologías para toda la empresa.
                                     </p>
-                                    <a href="" class="btn btn-default btn-lg">Descubre más sobre nosotros</a>
+                                    <a href="/detail" class="btn btn-default btn-lg">Descubre más sobre nosotros</a>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
 
                         <ul class="list-inline pull-right">
                             <li class="active"><a href="/">Inicio</a></li>
-                            <li><a href="about.html">Sobre Nosotros</a></li>
+                            <li><a href="/about">Sobre Nosotros</a></li>
                             <li><a href="/poll">Encuesta</a></li>
                         </ul>
                     </div><!-- .container -->
@@ -184,10 +184,11 @@
         <div>
             <div>
                 <ul id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/about">Sobre Nosotros</a></li>
+                    <li><a href="/poll">Encuesta</a></li>
+                    <li><a href="/lista">Ver lista</a></li>
+                    <li><a href="/detail">Detalles</a></li>
                 </ul>
             </div>
         </div>
