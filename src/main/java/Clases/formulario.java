@@ -16,13 +16,21 @@ public class formulario implements Serializable{
     private String nombre;
     private String sector;
     private String nivel_escolar;
-    private String posicion;
+    private String ciudad;
+    private String pais;
+    private String extra;
+    private String latitud;
+    private String longitud;
 
-    public formulario(String nombre, String sector, String nivel_escolar, String posicion) {
+    public formulario(String nombre, String sector, String nivel_escolar, String ciudad, String pais, String extra, String latitud, String longitud) {
         this.nombre = nombre;
         this.sector = sector;
         this.nivel_escolar = nivel_escolar;
-        this.posicion = posicion;
+        this.ciudad = ciudad;
+        this.pais = pais;
+        this.extra = extra;
+        this.latitud = latitud;
+        this.longitud = longitud;
     }
 
     public formulario() {
@@ -60,11 +68,43 @@ public class formulario implements Serializable{
         this.nivel_escolar = nivel_escolar;
     }
 
-    public String getPosicion() {
-        return posicion;
+    public String getCiudad() {
+        return ciudad;
     }
 
-    public void setPosicion(String posicion) {
-        this.posicion = posicion;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getExtra() {
+        return extra;
+    }
+
+    public void setExtra(String extra) {
+        this.extra = extra;
+    }
+
+    public String getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
+    }
+
+    public String getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(String longitud) {
+        this.longitud = longitud;
     }
 }
