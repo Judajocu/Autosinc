@@ -144,5 +144,8 @@
 <script src="/js/smoothscroll.js"></script>
 <script src="/js/mobile-menu.js"></script>
 <script src="/js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-2.2.4.min.js">
+</script>
+<script src="/js/location.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
     <input id="dato1">
     <input id="dato2">
     <input id="dato3">
-    <h3>latitud</h3><input id="dato4">
+    <h3>latitud</h3><input id="dato4" disabled>
     <h3>longitud</h3><input id="dato5">
 
     <br/>

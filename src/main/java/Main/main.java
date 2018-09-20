@@ -81,6 +81,52 @@ public class main {
             return new ModelAndView(mapa, "encuesta.ftl");
         }, motor);
 
+        post("/poll", (request, response) -> {
+
+            String name =request.queryParams("nombre") != null ? request.queryParams("nombre") : "unknown";
+            String sector =request.queryParams("sector") != null ? request.queryParams("sector") : "unknown";
+            String nivel =request.queryParams("nivel");
+            String calle =request.queryParams("calle");
+            String ciudad =request.queryParams("ciudad");
+            String pais =request.queryParams("pais");
+            String latitud =request.queryParams("latitud");
+            String longitud =request.queryParams("longitud");
+
+            System.out.println("Nombre:"+name);
+            System.out.println("Sector:"+sector);
+            System.out.println("nivel:"+nivel);
+            System.out.println("calle:"+calle);
+            System.out.println("ciudad:"+ciudad);
+            System.out.println("pais:"+pais);
+            System.out.println("latitud:"+latitud);
+            System.out.println("longitud:"+longitud);
+
+
+            formulario insertar = new formulario();
+            insertar.setNombre(name);
+            insertar.setSector(sector);
+            insertar.setNivel_escolar(nivel);
+            if(calle != null && !calle.isEmpty()) {
+                insertar.setExtra(calle);
+            }
+            if(ciudad != null && !ciudad.isEmpty()) {
+                insertar.setCiudad(ciudad);
+            }
+            if(pais != null && !pais.isEmpty()) {
+                insertar.setPais(pais);
+            }
+            if(latitud != null && !latitud.isEmpty()) {
+                insertar.setLatitud(latitud);
+            }
+            if(longitud!= null && !longitud.isEmpty()) {
+                insertar.setLongitud(longitud);
+            }
+            FormServices.getInstancia().crear(insertar);
+
+            response.redirect("/");
+            return "";
+        });
+
         get("/prueba2", (request, response) -> {
 
             Map<String, Object> mapa = new HashMap<>();
