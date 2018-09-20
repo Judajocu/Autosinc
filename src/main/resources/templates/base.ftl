@@ -144,7 +144,7 @@
                                 <div class="featured-content">
                                     <h1>Mejoramos tu rendimiento en la net</h1>
                                     <p>
-                                        Dynamically enhance accurate methods of empowerment without interdependent applications. Appropriately e-enable synergistic platforms for visionary manufactured products. Dramatically develop state of the art relationships without enterprise-wide methodologies.
+                                        Mejoras dinámicas de los métodos precisos de empoderamiento sin aplicaciones interdependientes. Apropiadamente habilitar plataformas sinérgicas para productos manufacturados visionarios. Desarrolle dramáticamente las más modernas relaciones sin metodologías para toda la empresa.
                                     </p>
                                     <a href="" class="btn btn-default btn-lg">Learn More About Us</a>
                                 </div>
