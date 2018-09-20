@@ -146,7 +146,7 @@
                                     <p>
                                         Mejoras dinámicas de los métodos precisos de empoderamiento sin aplicaciones interdependientes. Apropiadamente habilitar plataformas sinérgicas para productos manufacturados visionarios. Desarrolle dramáticamente las más modernas relaciones sin metodologías para toda la empresa.
                                     </p>
-                                    <a href="" class="btn btn-default btn-lg">Learn More About Us</a>
+                                    <a href="" class="btn btn-default btn-lg">Descubre más sobre nosotros</a>
                                 </div>
                             </div>
                         </div>
